@@ -40,7 +40,8 @@ class ObjectTracker :
                 continue
             #if abs(r - self.lastR) > self.r_epsilon :
                 #continue
-            #WARNING может работать неправильно, если рядом будет другой объект
+            #WARNING Г¬Г®Г¦ГҐГІ Г°Г ГЎГ®ГІГ ГІГј Г­ГҐГЇГ°Г ГўГЁГ«ГјГ­Г®, ГҐГ±Г«ГЁ Г°ГїГ¤Г®Г¬ ГЎГіГ¤ГҐГІ Г¤Г°ГіГЈГ®Г© Г®ГЎГєГҐГЄГІ
+            moveTo= Move.No
             if self.lastX < x :
                 self.moveTo = self.moveTo or Move.Right
             elif x < self.lastX :
